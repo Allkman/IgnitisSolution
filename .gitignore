@@ -1,0 +1,84 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+Debug/
+Release/
+x64/
+x86/
+[Aa]rtifacts/
+
+# IDE folders
+.vs/
+.idea/
+.vscode/
+
+# User-specific and solution state files
+*.user
+*.suo
+*.userosscache
+*.rsuser
+*.userprefs
+*.sln.docstates
+
+# Logs
+*.log
+logs/
+log/
+
+# Publish output
+publish/
+app.publish/
+*.pubxml
+*.publish.xml
+*.publishsettings
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+!**/packages/repositories.config
+
+# Config files (keep out of git)
+appsettings*.json
+Properties/launchSettings.json
+
+# Entity Framework / Database
+*.mdf
+*.ldf
+*.ndf
+Migrations/obj/
+
+# Azure Functions / local settings
+local.settings.json
+
+# Docker
+.dockerignore
+docker-compose*
+**/Dockerfile.*
+**/docker-compose*.yml
+.env
+
+# Node / Frontend (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc / OS files
+desktop.ini
+Thumbs.db
+*.DS_Store
+
+# Temporary / backup files
+*.tmp
+*.temp
+*.bak
+*.swp
