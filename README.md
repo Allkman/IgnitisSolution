@@ -81,6 +81,7 @@ Here are a few ideas for expanding the project:
 - Include pagination and sorting for large datasets.  
 - Extend API for data insertion and modification.  
 - Add logging and structured monitoring (e.g., Serilog, Application Insights).
+- Would also make sense to include Unit test with Moq object, to test PowerPlantService.cs
 
 ---
 
