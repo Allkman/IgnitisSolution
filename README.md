@@ -1,6 +1,7 @@
 # ⚡ IgnitisSolution
 
 A .NET 9 Web API project for managing **Power Plants** data — designed with a clean architecture, Entity Framework Core, and Swagger for API testing.
+
 <img width="742" height="321" alt="image" src="https://github.com/user-attachments/assets/1f3d0633-7931-42e7-b69f-bf3f67c0f38f" />
 <img width="495" height="757" alt="image" src="https://github.com/user-attachments/assets/a0730d13-6bc3-4478-a652-1a861d010fe5" />
 
