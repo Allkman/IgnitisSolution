@@ -95,11 +95,7 @@ Here are a few ideas for expanding the project:
 
 ---
 
-## 📸 Preview
 
-![Power Plant](https://upload.wikimedia.org/wikipedia/commons/e/e2/Nuclear_Power_Plant_illustration.svg)
 
----
-
-### © 2025 IgnitisSolution
-Maintained with ⚡ by the Ignitis development team.
+### © 2025 AllkmanSolutions
+Maintained with ⚡ by the ADev development team. Yes that is me Algirdas as a developer. Cheers :)
