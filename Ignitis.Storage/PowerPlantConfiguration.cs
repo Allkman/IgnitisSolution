@@ -16,6 +16,9 @@ namespace Ignitis.Storage
 
             builder.Property(pp => pp.Power).HasPrecision(18,1).IsRequired();
             builder.Property(pp => pp.ValidFrom).IsRequired();
+
+            builder.HasIndex(pp => pp.ValidFrom)
+                  .HasDatabaseName("IX_PowerPlants_ValidFrom");
         }
     }
 }

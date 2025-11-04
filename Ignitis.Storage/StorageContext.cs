@@ -8,7 +8,10 @@ namespace Ignitis.Storage
         public StorageContext(DbContextOptions<StorageContext> options) : base(options) { }
 
         public DbSet<PowerPlant> PowerPlants { get; set; }
-
+        public void Seed()
+        {
+            Seeds.PowerPlantsSeed.Seed(this);
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new PowerPlantConfiguration());
