@@ -1,4 +1,4 @@
-# ![⚡](https://upload.wikimedia.org/wikipedia/commons/5/5c/Electricity_pylon_icon.svg) IgnitisSolution
+# ⚡ IgnitisSolution
 
 A .NET 9 Web API project for managing **Power Plants** data — designed with a clean architecture, Entity Framework Core, and Swagger for API testing.
 
