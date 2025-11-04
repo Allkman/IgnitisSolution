@@ -51,7 +51,7 @@ Swagger UI will open automatically because `"launchBrowser": true` is configured
 You should see the API documentation at:
 
 ```
-(https://localhost:7218/swagger/index.html)
+https://localhost:7218/swagger/index.html
 ```
 
 ---
