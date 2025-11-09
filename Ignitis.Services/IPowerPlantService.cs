@@ -4,6 +4,7 @@ namespace Ignitis.Services
 {
     public interface IPowerPlantService
     {
-        Task<IEnumerable<PowerPlantDto>> GetByDateAsync(DateTimeOffset date);
+        Task CreatePowerPlantAsync(PowerPlantDto dto);
+        Task<PaginatedPowerPlantResponse<PowerPlantDto>> GetPaginatedAsync(PaginatedPowerPlantRequest request);
     }
 }
