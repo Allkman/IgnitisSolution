@@ -2,8 +2,6 @@
 
 A .NET 9 Web API project for managing **Power Plants** data — designed with a clean architecture, Entity Framework Core, and Swagger for API testing.
 
-<img width="742" height="321" alt="image" src="https://github.com/user-attachments/assets/1f3d0633-7931-42e7-b69f-bf3f67c0f38f" />
-<img width="495" height="757" alt="image" src="https://github.com/user-attachments/assets/a0730d13-6bc3-4478-a652-1a861d010fe5" />
 
 ---
 
@@ -60,31 +58,22 @@ https://localhost:7218/swagger/index.html
 ---
 
 ### 5. Test the Endpoint
-In Swagger, select endpoint and try calling by adding any date:
+In Swagger, select GET endpoint and try calling by forming such queries:
 
 ```
-date=2025-01-01
+https://localhost:7218/PowerPlants?Page=2&PageSize=2&Owner=ene
+https://localhost:7218/PowerPlants?Page=2&PageSize=5
 ```
+Select POST endpoint to test: 
+All/Any required fields missing
+Owner name validation
+Power number 0-200 inclusive
+Additionally: ValidTo date cannot be in the past if business is requesting non-archived power plants
 
-- The `date` parameter is **required**.
-- Try different dates to filter Power Plants based on the `ValidFrom` field.
-
-> ⚠️ **Note:** Using tomorrow’s date (future dates) will return an **empty array** — as no Power Plants are valid beyond the current time.
->  
-> A future enhancement could include **user-friendly warnings** when an invalid or future date is provided.
-
----
-
-## 🚀 Future Improvements
-
-Here are a few ideas for expanding the project:
-
-- Add validation or warning messages for invalid dates (e.g., tomorrow’s date).  
-- Implement filtering by `Owner` or `Power` ranges.  
-- Include pagination and sorting for large datasets.  
-- Extend API for data insertion and modification.  
-- Add logging and structured monitoring (e.g., Serilog, Application Insights).
-- Would also make sense to include Unit test with Moq object, to test PowerPlantService.cs
+```
+https://localhost:7218/PowerPlants
+```
+### 6. Added xUnit tests to test validation of the DTO 
 
 ---
 
