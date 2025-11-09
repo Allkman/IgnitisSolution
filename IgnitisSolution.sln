@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignitis.Api", "Ignitis.Api\Ignitis.Api.csproj", "{265946E1-9AE2-4AAA-8165-42F26488D28B}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignitis.Storage", "Ignitis.Storage\Ignitis.Storage.csproj", "{1A6D813C-006D-449B-A9FD-B5930372E322}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignitis.Services", "Ignitis.Services\Ignitis.Services.csproj", "{DBBB4D6B-B550-4AFA-8B68-B250DD92A4DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignitis.Tests", "Ignitis.Tests\Ignitis.Tests.csproj", "{8F8F2F46-7F97-424E-9DF5-3C01AAF0D118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DBBB4D6B-B550-4AFA-8B68-B250DD92A4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBBB4D6B-B550-4AFA-8B68-B250DD92A4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBBB4D6B-B550-4AFA-8B68-B250DD92A4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F8F2F46-7F97-424E-9DF5-3C01AAF0D118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8F2F46-7F97-424E-9DF5-3C01AAF0D118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8F2F46-7F97-424E-9DF5-3C01AAF0D118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8F2F46-7F97-424E-9DF5-3C01AAF0D118}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
