@@ -1,7 +1,6 @@
 using Ignitis.Services;
 using Ignitis.Services.Dtos;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 
 namespace Ignitis.Api.Controllers
 {
@@ -9,17 +8,27 @@ namespace Ignitis.Api.Controllers
     [Route("[controller]")]
     public class PowerPlantsController : ControllerBase
     {
-        private readonly IPowerPlantService _service;
-        public PowerPlantsController(IPowerPlantService service)
+        private readonly IPowerPlantService _powerPlantService;
+        public PowerPlantsController(IPowerPlantService powerPlantService)
         {
-            _service = service ?? throw new ArgumentNullException(nameof(service));
+            _powerPlantService = powerPlantService ?? throw new ArgumentNullException(nameof(powerPlantService));
         }
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<IEnumerable<PowerPlantDto>> GetByDate([FromQuery][Required] DateTimeOffset date)
+        public async Task<ActionResult<PaginatedPowerPlantResponse<PowerPlantDto>>> GetPaginated([FromQuery] PaginatedPowerPlantRequest request)
         {
-            return await _service.GetByDateAsync(date);
+            return Ok(await _powerPlantService.GetPaginatedAsync(request));
+        }
+
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        public async Task<ActionResult<PowerPlantDto>> CreatePowerPlant([FromBody] PowerPlantDto dto)
+        {
+            await _powerPlantService.CreatePowerPlantAsync(dto);
+
+            return CreatedAtAction(nameof(CreatePowerPlant), new { id = dto.Id }, dto);
         }
     }
 }
